@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <!-- <EditText
+    android:id="@+id/entry"
+    android:hint="@string/IRC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/editbox_background"
+    android:layout_toEndOf="@+id/text_view_boat1"
+    android:layout_alignParentTop="true"/> -->
+<!--
+    android:layout_alignBottom="@+id/wifiTypeSpinner"
+    android:layout_toEndOf="@+id/textview_chanmask"
+    android:layout_alignParentStart="true"
+    -->
+    <TextView
+        android:labelFor="@+id/wifiTypeSpinner"
+        android:layout_alignBottom="@+id/wifiTypeSpinner"
+        android:id="@+id/textview_wifitype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_type"
+        android:layout_alignRight="@+id/textview_chanmask"
+        android:layout_alignParentTop="true"/>
+    <Spinner
+        android:id="@+id/wifiTypeSpinner"
+        android:layout_toEndOf="@+id/textview_nbmaxres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textview_chanmask"
+        android:layout_below="@id/textview_wifitype"
+        android:text="@string/chanmask"
+        android:layout_alignRight="@+id/textview_acqmode"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/edittext_chanmask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edittext_chanmask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wifiTypeSpinner"
+        android:layout_toEndOf="@+id/textview_nbmaxres"
+        android:inputType="text" />
+<!--
+android:layout_alignBottom="@+id/textview_chanmask"
+        android:layout_alignEnd="@+id/wifiTypeSpinner"
+-->
+    <TextView
+        android:id="@+id/textview_acqmode"
+        android:layout_below="@+id/edittext_chanmask"
+        android:layout_alignRight="@+id/textview_nbmaxres"
+        android:text="@string/acqMode"
+        android:layout_alignBottom="@+id/acqModeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/acqModeSpinner"
+        android:layout_below="@+id/edittext_chanmask"
+        android:layout_toEndOf="@+id/textview_nbmaxres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--
+    android:layout_toEndOf="@+id/textview_chanmask"
+    -->
+
+    <TextView
+        android:id="@+id/textview_nbmaxres"
+        android:layout_below="@+id/textview_acqmode"
+        android:layout_alignBottom="@+id/edittext_nbmaxres"
+        android:gravity="center"
+        android:layout_alignRight="@+id/textview_nbscanperchan"
+        android:text="@string/nbMaxResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edittext_nbmaxres"
+        android:layout_below="@+id/acqModeSpinner"
+        android:layout_toEndOf="@+id/textview_nbmaxres"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--
+
+    -->
+
+    <TextView
+        android:id="@+id/textview_nbscanperchan"
+        android:layout_below="@+id/textview_nbmaxres"
+        android:text="@string/NbScanPerChan"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/edittext_nbscanperchan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edittext_nbscanperchan"
+        android:layout_below="@+id/edittext_nbmaxres"
+        android:layout_toEndOf="@+id/textview_nbscanperchan"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--
+    android:layout_alignBottom="@+id/textview_nbscanperchan"
+    -->
+
+    <TextView
+        android:id="@+id/textview_timeout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_nbscanperchan"
+        android:layout_alignRight="@+id/textview_nbscanperchan"
+        android:layout_alignBottom="@+id/edittext_timeout"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="@string/timeout" />
+
+    <EditText
+        android:id="@+id/edittext_timeout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_nbscanperchan"
+        android:layout_toEndOf="@+id/textview_timeout"
+        android:inputType="numberDecimal" />
+    <!--
+        android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/textview_timeout"
+    -->
+    <CheckBox
+        android:id="@+id/AbortOnTimeout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_timeout"
+        android:clickable="true"
+        android:text="@string/AbortOnTimeout"
+        android:onClick="AbortOnTimeoutClicked" />
+
+
+    <!-- <TextView
+        android:id="@+id/textview_acqmode"
+        android:layout_alignBottom="@+id/acqModeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acqMode"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textview_chanmask"/>
+    <Spinner
+        android:id="@+id/acqModeSpinner"
+        android:layout_below="@id/edittext_chanmask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textview_acqmode" /> -->
+
+    <!-- <TextView
+        android:id="@+id/text_view_boat3"
+        android:layout_alignBottom="@+id/entry3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boat_3"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textview_acqmode"/>
+    <EditText
+        android:id="@+id/entry3"
+        android:hint="@string/IRC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_toEndOf="@+id/textview_acqmode"
+        android:layout_below="@id/acqModeSpinner" /> -->
+
+</RelativeLayout>
+
+    <!-- <EditText
+        android:id="@+id/entry2"
+        android:hint="@string/IRC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_toEndOf="@+id/text_view_boat2"
+        android:layout_below="@id/entry"/> -->

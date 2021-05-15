@@ -1,0 +1,530 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/upperLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/readButton"
+            android:text="@string/read_button"
+            android:onClick="readFile" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/configButton"
+            android:text="@string/config_button"
+            android:onClick="configRadio" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvMAC_A"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:width="200dp"
+            android:fontFamily="monospace"
+            android:text="@string/blank_mac_addr" />
+
+        <TextView
+            android:id="@+id/tvRssi_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize" />
+
+        <EditText
+            android:id="@+id/bearing_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="@string/blank_bearing"
+            android:textSize="@dimen/entryTextSize" />
+        <!--
+        android:width="200dp"
+        -->
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/label_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_G"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_G"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_G"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_G"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_J"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_J"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_J"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_J"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_L"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_L"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_L"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_L"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_Q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvMAC_Q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_mac_addr"
+            android:fontFamily="monospace"
+            android:width="200dp" />
+        <TextView
+            android:id="@+id/tvRssi_Q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank_rssi"
+            android:textSize="@dimen/rssiTextSize"
+            android:width="80dp" />
+        <EditText
+            android:id="@+id/bearing_Q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/entryTextSize"
+            android:text="@string/blank_bearing" />
+    </TableRow>
+
+    <!--
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/button"
+            android:layout_column="2" />
+    </TableRow>
+-->
+
+</TableLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--
+    <item
+        android:id="@+id/miCompose"
+        app:showAsAction="ifRoom"
+        android:title="Compose">
+    </item>
+    <item
+        android:id="@+id/miProfile"
+        app:showAsAction="ifRoom|withText"
+        android:title="Profile">
+    </item> -->
+
+    <item
+        android:id="@+id/mi_usb"
+        android:title="@string/usb_aps"
+        android:visible="true"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/add_marker"
+        app:showAsAction="never"
+        android:title="@string/add_marker_str">
+    </item>
+
+<!--    <item
+        android:id="@+id/get_location"
+        app:showAsAction="never"
+        android:title="@string/get_location_str">
+    </item> -->
+
+    <item android:id="@+id/maptype"
+        android:title="@string/map_type_str" >
+        <menu>
+            <item android:id="@+id/map_type_normal"
+                android:title="@string/normal_str" />
+            <item android:id="@+id/map_type_satellite"
+                android:title="@string/satellite_str" />
+            <item android:id="@+id/map_type_hybrid"
+                android:title="@string/hybrid_str" />
+            <item android:id="@+id/map_type_terrain"
+                android:title="@string/terrain_str" />
+            <item android:id="@+id/map_type_none"
+                android:title="@string/none_str" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/export_db"
+        app:showAsAction="never"
+        android:title="@string/export_db">
+    </item>
+    <!--
+    <item
+        android:id="@+id/open_file"
+        app:showAsAction="never"
+        android:title="@string/open_file">
+    </item> -->
+
+    <item
+        android:id="@+id/show_file"
+        app:showAsAction="never"
+        android:title="@string/show_file">
+    </item>
+
+    <item android:id="@+id/AP_marker"
+        android:title="@string/ap_marker">
+        <menu>
+            <item android:id="@+id/add_AP_marker"
+                android:title="@string/add_AP_marker"/>
+            <item android:id="@+id/save_AP_marker"
+                android:title="@string/save_AP_marker"/>
+        </menu>
+    </item>
+    <!--
+    app:showAsAction="never"
+    -->
+
+    <item
+        android:id="@+id/delete_item"
+        app:showAsAction="never"
+        android:title="@string/delete_item">
+    </item>
+
+    <!-- <item
+        android:id="@+id/room_test"
+        app:showAsAction="never"
+        android:title="@string/room_test">
+    </item> -->
+
+</menu>

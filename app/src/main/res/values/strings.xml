@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">apLocator</string>
+    <string name="title_activity_maps">find APs</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+
+    <!--    Menu    -->
+    <string name="usb_aps">usb APs</string>
+    <string name="map_type_str">map type</string>
+    <string name="normal_str">normal</string>
+    <string name="satellite_str">satellite</string>
+    <string name="hybrid_str">hybrid</string>
+    <string name="terrain_str">terrain</string>
+    <string name="none_str">none</string>
+    <string name="add_marker_str">add marker</string>
+    <string name="get_location_str">get location</string>
+    <string name="export_db">export DB</string>
+    <!-- <string name="open_file">open file</string> -->
+    <string name="show_file">show DB</string>
+    <string name="remove_file">remove file</string>
+    <string name="read_button">read DB</string>
+    <string name="config_button">LR1110</string>
+    <string name="add_AP_marker">add</string>
+    <string name="save_AP_marker">save</string>
+    <string name="ap_marker">AP marker</string>
+    <string name="delete_item">delete item</string>
+    <!-- <string name="room_test">room test</string> -->
+
+    <!--
+    <string name=""></string>
+    -->
+    <string name="blank_mac_addr">FF:FF:FF:FF:FF:FF</string>
+    <string name="blank_rssi">-127</string>
+    <string name="blank_bearing">360</string>
+
+    <dimen name="entryTextSize">12sp</dimen>
+    <dimen name="rssiTextSize">18sp</dimen>
+
+    <string name="title_activity_show_access_points">show access points</string>
+
+    <!-- LR111- configuration -->
+    <string name="chanLabel">channels:</string>
+    <string name="noChannels">0x0000</string>
+    <string name="nbMaxResults">nbMaxResults:</string>
+    <string name="NbScanPerChan">NbScanPerChan:</string>
+    <string name="timeout">timeout ms:</string>
+
+    <string name="wifi_type">wifi type:</string>
+    <string name="acqMode">acqMode:</string>
+    <string name="boat_3">boat_3</string>
+    <string name="IRC">IRC</string>
+    <string name="chanmask">ChanMask:</string>
+    <string name="AbortOnTimeout">AbortOnTimeout</string>
+
+
+</resources>
